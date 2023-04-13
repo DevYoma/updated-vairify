@@ -15,6 +15,7 @@
 .App {
   font-size: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;

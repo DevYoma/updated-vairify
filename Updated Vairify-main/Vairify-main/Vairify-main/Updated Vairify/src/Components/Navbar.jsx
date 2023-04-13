@@ -6,6 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { HashLink as Link } from 'react-router-hash-link'
 import { BrowserRouter } from 'react-router-dom';
 import logo from '../Assets/png/Logo.png'
+import '../Styles/Navbar.scss';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -31,8 +32,12 @@ const Navbar = () => {
                 <li style={{ fontSize: "0.8rem" }}><Link to="#service" style={{ color: "#000" }}>My Revenue Portal</Link></li>
                 <li style={{ fontSize: "0.8rem" }}><Link to="#projects" style={{ color: "#000" }}>Provider Representaion</Link></li>
               </ul>
-              <Link to='#ContactMe'>
-                <Button color='myColor' sx={{ ml: 4, px: 3, borderRadius: '30px', fontSize: "1rem" }}>Login/Sign Up</Button>
+              <Link target='_blank' to='https://affiliate.vairify.date/login'>
+                <Button color='myColor' sx={{ ml: 4, px: 3, borderRadius: '30px', fontSize: "1rem" }}>Login</Button>
+              </Link>
+
+              <Link target='_blank' to='https://affiliate.vairify.date/register'>
+                <Button color='myColor' sx={{ ml: 4, px: 3, borderRadius: '30px', fontSize: "1rem" }}>Register</Button>
               </Link>
             </Box>
           </BrowserRouter>
@@ -42,7 +47,7 @@ const Navbar = () => {
         {/* Mobile Navbar */}
         <Box className='mobile'>
           <Box>
-            <Typography variant="h6" fontWeight={600} className="name">MY_Portfolio</Typography>
+            <img src={logo} alt="" width={140} />
           </Box>
           <Box>
             {
@@ -59,8 +64,16 @@ const Navbar = () => {
                 <li style={{ fontSize: "0.8rem" }}><Link to="#service" style={{ color: "#fff" }}>My Revenue Portal</Link></li>
                 <li style={{ fontSize: "0.8rem" }}><Link to="#projects" style={{ color: "#fff" }}>Provider Representaion</Link></li>
               </ul>
-              <Link to='#ContactMe'>
+              {/* <Link to='#ContactMe'>
                 <Button color='myColor' sx={{ mr: 2 }} onClick={handleClick}>Contect Me</Button>
+              </Link> */}
+
+              <Link target='_blank' to='https://affiliate.vairify.date/login'>
+                <Button color='myColor' sx={{  mr: 2 }}>Login</Button>
+              </Link>
+
+              <Link target='_blank' to='https://affiliate.vairify.date/register'>
+                <Button color='myColor' sx={{  mr: 2 }}>Register</Button>
               </Link>
             </Box>
           </BrowserRouter>
