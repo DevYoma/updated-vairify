@@ -32,11 +32,11 @@ const Navbar = () => {
                 <li style={{ fontSize: "0.8rem" }}><Link to="#service" style={{ color: "#000" }}>My Revenue Portal</Link></li>
                 <li style={{ fontSize: "0.8rem" }}><Link to="#projects" style={{ color: "#000" }}>Provider Representaion</Link></li>
               </ul>
-              <Link target='_blank' to='https://affiliate.vairify.date/login'>
+              <Link target='_blank'  rel="noreferrer" to='https://affiliate.vairify.date/login'>
                 <Button color='myColor' sx={{ ml: 4, px: 3, borderRadius: '30px', fontSize: "1rem" }}>Login</Button>
               </Link>
 
-              <Link target='_blank' to='https://affiliate.vairify.date/register'>
+              <Link target='_blank'  rel="noreferrer" to='https://affiliate.vairify.date/register'>
                 <Button color='myColor' sx={{ ml: 4, px: 3, borderRadius: '30px', fontSize: "1rem" }}>Register</Button>
               </Link>
             </Box>
@@ -68,12 +68,12 @@ const Navbar = () => {
                 <Button color='myColor' sx={{ mr: 2 }} onClick={handleClick}>Contect Me</Button>
               </Link> */}
 
-              <Link target='_blank' to='https://affiliate.vairify.date/login'>
+              <Link target='_blank'  rel="noreferrer" to='https://affiliate.vairify.date/login'>
                 <Button color='myColor' sx={{  mr: 2 }}>Login</Button>
               </Link>
 
               <Link target='_blank' to='https://affiliate.vairify.date/register'>
-                <Button color='myColor' sx={{  mr: 2 }}>Register</Button>
+                <Button color='myColor'  rel="noreferrer" sx={{  mr: 2 }}>Register</Button>
               </Link>
             </Box>
           </BrowserRouter>
