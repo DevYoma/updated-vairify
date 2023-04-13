@@ -1,0 +1,21 @@
+{
+    "English":{
+        "name":"Name",
+        "email":"Email",
+        "Password":"Password",
+        "Confirm_Password":"Confirm Password",
+        "Data":"Already account",
+        "SignIn":"Sign In",
+        "SignUp":"Sign Up"
+    },
+    "Spanish":{
+        "name":"nombre",
+        "email":"correo electrónico",
+        "Password":"Contraseña",
+        "Confirm_Password":"Confirmar Contraseña",
+        "Data":"Ya cuenta ",
+        "SignIn":"Iniciar sesión",
+        "SignUp":"Inscribirse"
+    }
+}
+
